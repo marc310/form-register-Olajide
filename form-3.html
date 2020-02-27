@@ -1,467 +1,608 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Form 2 Olajide</title>
+    <title>Form 3 Olajide</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
+
     <script src="src/js/jquery.js"></script>
     <link href="src/css/style.css" rel="stylesheet">
     <link href="src/css/all.css" rel="stylesheet"> <!-- fontawesome -->
     <script src="src/js/script.js"></script>
     <script src="src/js/bootstrap.js"></script>
     <script src="src/js/popper.js"></script>
-  
+
 </head>
+
 <body>
 
     <div class="container">
         <div class="mt-5 mb-5">
-            <h1>Form CNSN Cerebral Palsy</h1>
+            <h1>Perinatal Neonatal History</h1>
         </div>
 
         <div class="container card sombra mb-5">
-        <form>
-            <div class="container mb-5 mt-5">
+            <form>
+                <div class="container mb-5 mt-5">
 
-            <!-- ==================================================================================================== -->
-            <!-- FORM SECTION 1 -->
-            <div class="title-form mb-4 mt-4">
-                <h2>Register</h2>
-            </div>
+                    <!-- ==================================================================================================== -->
+                    <!-- FORM SECTION 1 -->
+                    <!-- row 1 -->
+                    <div class="form-row">
 
-            <!-- row 1 -->
-            <div class="form-row">
-
-                <div class="form-group col-md-12">
-                  <label for="name">Name</label>
-                  <input type="date" class="form-control" id="name" placeholder="Input the Name">
-                </div>
-
-                <div class="form-group col-md-3">
-                  <label for="study-n-sw-uch">Study no. SW/UCH</label>
-                  <input type="text" class="form-control" id="study-n-sw-uch" placeholder="Study no. SW/UCH">
-                </div>
-
-                <div class="form-group col-md-3">
-                    <label for="hospital-number">Hospital Number</label>
-                    <input type="text" class="form-control" id="hospital-number" placeholder="Hospital Number">
-                </div>
-
-                <div class="form-group col-md-3">
-                    <label for="gender">Gender</label>
-                    <input type="text" class="form-control" id="gender" placeholder="Gender">
-                </div>
-
-                <div class="form-group col-md-3">
-                    <label for="dob">DOB</label>
-                    <input type="text" class="form-control" id="dob" placeholder="DOB">
-                </div>
-
-
-                <div class="form-group form-inline col-md-12">
-                    <label class="check-label-m">Geo-Political Zone</label>
-                    <div class="col-md-12 form-check-inline check-group">
-
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="geopolitical-zone" id="ne" value="option1">
-                        <label class="form-check-label" for="ne">NE</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="geopolitical-zone" id="nc" value="option2">
-                        <label class="form-check-label" for="nc">NC</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="geopolitical-zone" id="se" value="option3">
-                        <label class="form-check-label" for="se">SE</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="geopolitical-zone" id="sw" value="option4">
-                        <label class="form-check-label" for="sw">SW</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="geopolitical-zone" id="ss" value="option5">
-                        <label class="form-check-label" for="ss">SS</label>
-                    </div>
-
-                    </div>
-                </div>
-
-
-                <div class="form-group form-inline col-md-12 ">
-                    <label class="check-label-m">With whom does child live?</label>
-
-                    <div class="col-md-12 form-check-inline check-group">
-
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="whomChildLive" id="both-parents" value="option1">
-                        <label class="form-check-label" for="both-parents">Both Parents</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="whomChildLive" id="mother-alone" value="option2">
-                        <label class="form-check-label" for="mother-alone">Mother Alone</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="whomChildLive" id="father-alone" value="option3">
-                        <label class="form-check-label" for="father-alone">Father Alone</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="whomChildLive" id="grandparents" value="option4">
-                        <label class="form-check-label" for="grandparents">Grandparents</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="whomChildLive" id="foster-home" value="option5">
-                        <label class="form-check-label" for="foster-home">Foster Home</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="whomChildLive" id="other-relatives" value="option6">
-                        <label class="form-check-label" for="other-relatives">Other Relatives</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="whomChildLive" id="any-other" value="option7">
-                        <label class="form-check-label" for="any-other">Any Other</label>
-                    </div>
-
-                    </div>
-
-                </div>
-
-                <div class="border-top my-3"></div>
-
-                <div class="form-group col-md-12">
-                    <label for="informant">Informant</label>
-                    <input type="text" class="form-control" id="informant" placeholder="Informant">
-                </div>
-
-                <div class="form-group col-md-12 ">
-                    <label for="informant check-label-m">Any Change in Caregiver Since Diagnosis</label>
-                    <div class="col-md-12 form-check-inline check-group">
-                        <div class="col-md-2">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="last6MonthsChild" id="last-6months-child-yes" value="option3">
-                            <label class="form-check-label" for="last-6months-child-yes">Yes</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" name="last6MonthsChild" id="last-6months-child-no" value="option4">
-                            <label class="form-check-label" for="last-6months-child-no">No</label>
-                        </div>
-                        </div>
-                        <div class="col-md-10">
-                        <input type="text" class="form-control" id="if-yes-who" placeholder="If Yes, Who?">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group col-md-12">
-                    <label for="address">Address</label>
-                    <input type="text" class="form-control" id="address" placeholder="Address">
-                </div>
-
-                <div class="form-group col-md-12">
-                    <label for="state-residence">State of Residence</label>
-                    <input type="text" class="form-control" id="state-residence" placeholder="State of Residence">
-                </div>
-
-                <div class="form-group col-md-6">
-                    <label for="phone-number">Phone Number</label>
-                    <input type="text" class="form-control" id="phone-number" placeholder="Phone Number">
-                </div>
-
-                <div class="form-group col-md-6">
-                    <label for="email">E-mail</label>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                        <div class="input-group-text">@</div>
-                        </div>
-                        <input type="text" class="form-control" id="email" placeholder="E-mail">
-                    </div>
-                </div>
-
-                <div class="form-group col-md-6">
-                    <label for="date-last-seen-pnc">Date of Enrolment</label>
-                    <input type="date" class="form-control" id="date-last-seen-pnc" placeholder="date-last-seen">
-                  </div>
-
-                  <div class="form-group col-md-6">
-                    <label for="date-last-seen-pnc">Date First Diagnosed with CP</label>
-                    <input type="date" class="form-control" id="date-last-seen-pnc" placeholder="date-last-seen">
-                  </div>
-
-                  <div class="form-group col-md-6">
-                    <label for="months-delay">Age at wich parents first observed delays in milestones</label>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text">Months:</div>
-                        </div>
-                        <input type="text" class="form-control" id="months-delay" placeholder="Months observed">
-                    </div>
-                </div>
-
-                <div class="form-group col-md-6">
-                    <label for="age-diagnosis-cp">Age at diagnosis of CP</label>
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text">Months:</div>
-                        </div>
-                        <input type="text" class="form-control" id="age-diagnosis-cp" placeholder="Months diagnosis">
-                    </div>
-                </div>
-
-                <!-- WHO MADE DIAGNOSIS -->
-                <div class="form-group col-md-12 ">
-                    <label for="childNeurologist">Who made the diagnosis of CP?</label>
-                    <div class="col-md-12 form-check-inline check-group">
-                        <div class="col-md-12 ">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="childNeurologist" id="child-neurologist" value="option1">
-                                <label class="form-check-label" for="child-neurologist">Child Neurologist </label>
-                                 </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="childNeurologist" id="paediatrician" value="option2">
-                                <label class="form-check-label" for="paediatrician">Paediatrician</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="childNeurologist" id="resident-doctor" value="option3">
-                                <label class="form-check-label" for="resident-doctor">Resident Doctor</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="childNeurologist" id="nurse" value="option4">
-                                <label class="form-check-label" for="nurse">Nurse</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="childNeurologist" id="others" value="option5">
-                                <label class="form-check-label" for="others">Others</label>
+                        <div class="col-md-4 col-sm-12 mb-3">
+                            <label for="duration-pregnancy">Duration of Pregnancy</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="duration-pregnancy"
+                                placeholder="Input duration" aria-describedby="input-duration-pregnancy" required>
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="input-duration-pregnancy">Weeks</span>
+                                        </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-
-                <div class="col-md-12">
-                    <div class="input-group mb-2">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text">Source Referral:</div>
-                        </div>
-                        <input type="text" class="form-control" id="age-diagnosis-cp" placeholder="If Other Specify Who made the diagnosis of CP?">
-                    </div>
-                </div>
-                <!-- WHO MADE DIAGNOSIS END -->
 
 
 
-                    </div>
-            <!-- row 1 -->
-            <!-- ==================================================================================================== -->
-            
-            
-            <!-- ==================================================================================================== -->
-
-            <!-- FORM SECTION 2 -->
-            <div class="title-form mb-4 mt-4">
-                <h2>Motor Involvement in CP</h2>
-            </div>
-
-            <!-- Motor Involvement in CP FORM ROW -->
-            <div class="form-row">
-
-
-                <div class="form-group col-md-12 ">
-                    <label for="patternLimbInvolvement">Pattern of Limb Involvement</label>
-                    <div class="col-md-12 form-check-inline check-group">
-                        <div class="col-md-12 ">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="patternLimbInvolvement" id="hemiplegia" value="option1">
-                                <label class="form-check-label" for="hemiplegia">Hemiplegia</label>
-                                 </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="patternLimbInvolvement" id="diplegia" value="option2">
-                                <label class="form-check-label" for="diplegia">Diplegia</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="patternLimbInvolvement" id="quadriplegia" value="option3">
-                                <label class="form-check-label" for="quadriplegia">Quadriplegia</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="patternLimbInvolvement" id="triplegia" value="option4">
-                                <label class="form-check-label" for="triplegia">Triplegia</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="patternLimbInvolvement" id="monoplegia" value="option5">
-                                <label class="form-check-label" for="monoplegia">Monoplegia</label>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="form-group col-md-6 ">
-                    <label for="patternLimbInvolvement">Pattern of Limb Involvement</label>
-                    <div class="col-md-12 form-check-inline check-group">
-                        <div class="col-md-12 ">
-
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="rul" value="option1">
-                                <label class="form-check-label" for="rul">RUL</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="lul" value="option2">
-                                <label class="form-check-label" for="lul">LUL</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="rll" value="option2">
-                                <label class="form-check-label" for="rll">RLL</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="checkbox" id="lll" value="option2">
-                                <label class="form-check-label" for="lll">LLL</label>
-                              </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group col-md-6">
-                    <label for="typeCp">Type of CP</label>
-                    <div class="col-md-12 form-check-inline check-group">
-                        <div class="col-md-12 ">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="typeCp" id="spatic" value="option1">
-                                <label class="form-check-label" for="spatic">Spastic</label>
-                                 </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="typeCp" id="dyskinetic" value="option2">
-                                <label class="form-check-label" for="dyskinetic">Dyskinetic</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="typeCp" id="atonic-hypotonic" value="option3">
-                                <label class="form-check-label" for="atonic-hypotonic">Atonic/Hypotonic</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="typeCp" id="ataxic" value="option4">
-                                <label class="form-check-label" for="ataxic">Ataxic</label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="typeCp" id="mixed" value="option5">
-                                <label class="form-check-label" for="mixed">Mixed</label>
+                        <!-- Term / Preterm Delivery -->
+                        <div class="form-group col-md-8 col-sm-12 ">
+                            <label for="term-preterm-delivery">Term / Preterm Delivery</label>
+                            <div class="col-md-12 form-check-inline check-group">
+                                <div class="col-md-12">
+                                    <div class="col-auto form-check-inline">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="term-preterm-delivery"
+                                                id="term-preterm-delivery-term" value="option1">
+                                            <label class="form-check-label" for="term-preterm-delivery-term"> Term
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="term-preterm-delivery"
+                                                id="term-preterm-delivery-preterm" value="option2">
+                                            <label class="form-check-label" for="term-preterm-delivery-preterm"> Preterm
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        <!-- Term / Preterm Delivery END -->
+
+                        <!-- Type of conception -->
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="type-conception">Type of conception</label>
+                            <div class="col-md-12 form-check-inline check-group">
+                                <div class="col-md-12">
+                                    <div class="col-auto form-check-inline">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="type-conception"
+                                                id="type-conception-natural" value="option1">
+                                            <label class="form-check-label" for="type-conception-natural"> Natural
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="type-conception"
+                                                id="type-conception-assisted" value="option2">
+                                            <label class="form-check-label" for="type-conception-assisted"> Assisted
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-8 col-sm-12">
+                            <label for="if-yes-type-intervention">If Assisted, wich type?</label>
+                            <input type="text" class="form-control" id="if-yes-type-intervention"
+                                placeholder="If Assisted, wich type?">
+                        </div>
+                        <!-- Type of conception END -->
+
+                        <!-- Complications in pregnancy -->
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="complications-pregnancy">Complications in Pregnancy?</label>
+                            <div class="col-md-12 form-check-inline check-group">
+                                <div class="col-md-12">
+                                    <div class="col-auto form-check-inline">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="complications-pregnancy"
+                                                id="complications-pregnancy-yes" value="option1">
+                                            <label class="form-check-label" for="complications-pregnancy-yes"> Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="complications-pregnancy"
+                                                id="complications-pregnancy-no" value="option2">
+                                            <label class="form-check-label" for="complications-pregnancy-no"> No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-8 col-sm-12">
+                            <label for="if-yes-give-details">If yes, give details</label>
+                            <input type="text" class="form-control" id="if-yes-give-details"
+                                placeholder="Input details">
+                        </div>
+                        <!-- Complications in pregnancy END -->
+
                     </div>
-                </div>
 
+                    <div class="form-row">
 
-                <div class="form-group col-md-6">
-                    <label for="spatic-unilateral-bilateral">If Spastic is it unilateral or bilateral spatic CP4</label>
-                    <div class="col-md-12 form-check-inline check-group">
-                        <div class="col-md-12 ">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="spatic-unilateral-bilateral" id="unilateral" value="option1">
-                                <label class="form-check-label" for="unilateral">Unilateral</label>
-                                 </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="spatic-unilateral-bilateral" id="bilateral" value="option2">
-                                <label class="form-check-label" for="bilateral">Bilateral</label>
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="country-birth">Country of Birth</label>
+                            <input type="text" class="form-control" id="country-birth"
+                                placeholder="Input the country of birth">
+                        </div>
+
+                        <div class="form-group col-md-8 col-sm-12">
+                            <label for="type-pregnancy">Type of Pregnancy</label>
+                            <div class="col-md-12  check-group">
+                                <div class="col-md-12">
+                                    <div class="col-auto form-check-inline">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="type-pregnancy"
+                                                id="singleton" value="option1">
+                                            <label class="form-check-label" for="singleton"> Singleton
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="type-pregnancy"
+                                                id="twin" value="option2">
+                                            <label class="form-check-label" for="twin"> Twin
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="type-pregnancy"
+                                                id="triplet" value="option3">
+                                            <label class="form-check-label" for="triplet"> Triplet
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="type-pregnancy"
+                                                id="quadruplet" value="option4">
+                                            <label class="form-check-label" for="quadruplet"> Quadruplet
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="type-pregnancy"
+                                                id="quintuplet" value="option2">
+                                            <label class="form-check-label" for="quintuplet"> Quintuplet
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
+                        <div class="col-md-4 col-sm-12 mb-3">
+                            <label for="duration-labour">Duration of Labour</label>
+                            <input type="text" class="form-control" id="duration-labour"
+                                    placeholder="Input weeks" aria-describedby="input-duration-labour" required>
+                        </div>
+
+                        <div class="form-group col-md-8 col-sm-12">
+                            <label for="mode-delivery">Mode of Delivery</label>
+                            <div class="col-md-12  check-group">
+                                <div class="col-md-12">
+                                    <div class="col-auto form-check-inline">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="mode-delivery"
+                                                id="svd" value="option1">
+                                            <label class="form-check-label" for="svd"> SVD
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="mode-delivery"
+                                                id="breech" value="option2">
+                                            <label class="form-check-label" for="breech"> Breech
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="mode-delivery"
+                                                id="emc-s" value="option3">
+                                            <label class="form-check-label" for="emc-s"> EMC/S
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="mode-delivery"
+                                                id="elcs" value="option4">
+                                            <label class="form-check-label" for="elcs"> ELCS
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="mode-delivery"
+                                                id="forceps" value="option5">
+                                            <label class="form-check-label" for="forceps"> Forceps
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="mode-delivery"
+                                                id="vacuum-extraction" value="option6">
+                                            <label class="form-check-label" for="vacuum-extraction"> Vacuum Extraction
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-12 col-sm-12">
+                            <label for="place-delivery">Place of Delivery</label>
+                            <div class="col-md-12  check-group">
+                                <div class="col-md-12">
+                                    <div class="col-auto form-check-inline">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="place-delivery"
+                                                id="home" value="option1">
+                                            <label class="form-check-label" for="home"> Home
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="place-delivery"
+                                                id="tba" value="option2">
+                                            <label class="form-check-label" for="tba"> TBA
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="place-delivery"
+                                                id="mission-house" value="option3">
+                                            <label class="form-check-label" for="mission-house"> Mission House
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="place-delivery"
+                                                id="private-hospital" value="option4">
+                                            <label class="form-check-label" for="private-hospital"> Private Hospital
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="place-delivery"
+                                                id="phc" value="option5">
+                                            <label class="form-check-label" for="phc"> PHC
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="place-delivery"
+                                                id="general-hosp" value="option6">
+                                            <label class="form-check-label" for="general-hosp"> General Hospital
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="place-delivery"
+                                                id="teaching-hospital" value="option7">
+                                            <label class="form-check-label" for="teaching-hospital"> Teaching Hospital
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="place-delivery"
+                                                id="others" value="option8">
+                                            <label class="form-check-label" for="others"> Others
+                                            </label>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="cry-after-birth">Did he/she cry immediately after birth?</label>
+                            <div class="col-md-12 form-check-inline check-group">
+                                <div class="col-md-12">
+                                    <div class="col-auto form-check-inline">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="cry-after-birth"
+                                                id="cry-after-birth-yes" value="option1">
+                                            <label class="form-check-label" for="cry-after-birth-yes"> Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="cry-after-birth"
+                                                id="cry-after-birth-no" value="option2">
+                                            <label class="form-check-label" for="cry-after-birth-no"> No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="resuscitation-at-birth">Any active resuscitation at birth?</label>
+                            <div class="col-md-12 form-check-inline check-group">
+                                <div class="col-md-12">
+                                    <div class="col-auto form-check-inline">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="resuscitation-at-birth"
+                                                id="resuscitation-at-birth-yes" value="option1">
+                                            <label class="form-check-label" for="resuscitation-at-birth-yes"> Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="resuscitation-at-birth"
+                                                id="resuscitation-at-birth-no" value="option2">
+                                            <label class="form-check-label" for="resuscitation-at-birth-no"> No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="birth-weight">Birth Weight</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="birth-weight"
+                                placeholder="Input Weight" aria-describedby="birth-weight" required>
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="birth-weight">Kg</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="time-first-feed-after-birth">Time of First feed after birth</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="time-first-feed-after-birth"
+                                placeholder="Input time" aria-describedby="time-first-feed-after-birth" required>
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="time-first-feed-after-birth">Minutes/Hours/Days</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group col-md-8 col-sm-12">
+                            <label for="mode-feeding-after-birth">Mode of feeding after birth</label>
+                            <div class="col-md-12  check-group">
+                                <div class="col-md-12">
+                                    <div class="col-auto form-check-inline">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="mode-feeding-after-birth"
+                                                id="npo" value="option1">
+                                            <label class="form-check-label" for="npo"> NPO
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="mode-feeding-after-birth"
+                                                id="ebm" value="option2">
+                                            <label class="form-check-label" for="ebm"> EBM
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="mode-feeding-after-birth"
+                                                id="direct-breastfeeding" value="option3">
+                                            <label class="form-check-label" for="direct-breastfeeding"> Direct Breastfeeding
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="mode-feeding-after-birth"
+                                                id="formula" value="option4">
+                                            <label class="form-check-label" for="formula"> Formula
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="mode-feeding-after-birth"
+                                                id="glucose-water" value="option5">
+                                            <label class="form-check-label" for="glucose-water"> Glucose Water
+                                            </label>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="any-nicu-adimission">Any NICU admission?</label>
+                            <div class="col-md-12 form-check-inline check-group">
+                                <div class="col-md-12">
+                                    <div class="col-auto form-check-inline">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="any-nicu-adimission"
+                                                id="any-nicu-adimission-yes" value="option1">
+                                            <label class="form-check-label" for="any-nicu-adimission-yes"> Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="any-nicu-adimission"
+                                                id="any-nicu-adimission-no" value="option2">
+                                            <label class="form-check-label" for="any-nicu-adimission-no"> No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="reasons-admission">Reasons for Admission</label>
+                            <input type="text" class="form-control" id="reasons-admission" placeholder="Describe the Reasons">
+                        </div>
+
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="duration-nicu-admission">Any NICU admission?</label>
+                            <input type="text" class="form-control" id="duration-nicu-admission" placeholder="Any NICU admission?">
+                        </div>
+
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="any-history-neonatal-seizures">Any History of neonatal seizures?</label>
+                            <div class="col-md-12 form-check-inline check-group">
+                                <div class="col-md-12">
+                                    <div class="col-auto form-check-inline">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="any-history-neonatal-seizures"
+                                                id="any-history-neonatal-seizures-yes" value="option1">
+                                            <label class="form-check-label" for="any-history-neonatal-seizures-yes"> Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="any-history-neonatal-seizures"
+                                                id="any-history-neonatal-seizures-no" value="option2">
+                                            <label class="form-check-label" for="any-history-neonatal-seizures-no"> No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="any-history-nnj">Any history of NNJ?</label>
+                            <div class="col-md-12 form-check-inline check-group">
+                                <div class="col-md-12">
+                                    <div class="col-auto form-check-inline">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="any-history-nnj"
+                                                id="any-history-nnj-yes" value="option1">
+                                            <label class="form-check-label" for="any-history-nnj-yes"> Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="any-history-nnj"
+                                                id="any-history-nnj-no" value="option2">
+                                            <label class="form-check-label" for="any-history-nnj-no"> No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="sbr-level">If yes, SBR level (if known/documented)</label>
+                            <input type="text" class="form-control" id="sbr-level" placeholder="Type SBR Level">
+                        </div>
+
+                        
+                        <div class="form-group col-md-12 ">
+                            <label for="treatment-given-nnj">Treatment given for NNJ</label>
+                            <div class="col-md-12 form-check-inline check-group">
+                                <div class="col-md-12 ">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="treatment-given-nnj"
+                                            id="phototherapy" value="option1">
+                                        <label class="form-check-label" for="phototherapy">Phototherapy</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="treatment-given-nnj"
+                                            id="ebt" value="option2">
+                                        <label class="form-check-label" for="ebt">EBT</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="treatment-given-nnj"
+                                            id="antibiotics" value="option3">
+                                        <label class="form-check-label" for="antibiotics">Antibiotics</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="treatment-given-nnj"
+                                            id="herbal-preparations" value="option4">
+                                        <label class="form-check-label" for="herbal-preparations">Herbal Preparations</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="treatment-given-nnj"
+                                            id="no-treatment" value="option5">
+                                        <label class="form-check-label" for="no-treatment">No Treatment</label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="any-history-history-suggestive-nn-sepsis">Any history suggestive of NN Sepsis</label>
+                            <div class="col-md-12 form-check-inline check-group">
+                                <div class="col-md-12">
+                                    <div class="col-auto form-check-inline">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="any-history-history-suggestive-nn-sepsis"
+                                                id="any-history-history-suggestive-nn-sepsis-yes" value="option1">
+                                            <label class="form-check-label" for="any-history-history-suggestive-nn-sepsis-yes"> Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="any-history-history-suggestive-nn-sepsis"
+                                                id="any-history-history-suggestive-nn-sepsis-no" value="option2">
+                                            <label class="form-check-label" for="any-history-history-suggestive-nn-sepsis-no"> No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="any-history-nn-meningits">Any history of NN meningits?</label>
+                            <div class="col-md-12 form-check-inline check-group">
+                                <div class="col-md-12">
+                                    <div class="col-auto form-check-inline">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="any-history-nn-meningits"
+                                                id="any-history-nn-meningits-yes" value="option1">
+                                            <label class="form-check-label" for="any-history-nn-meningits-yes"> Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="any-history-nn-meningits"
+                                                id="any-history-nn-meningits-no" value="option2">
+                                            <label class="form-check-label" for="any-history-nn-meningits-no"> No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group col-md-4 col-sm-12">
+                            <label for="any-history-metabolic-disorder">Any history of metabolic disorder / derangement?</label>
+                            <div class="col-md-12 form-check-inline check-group">
+                                <div class="col-md-12">
+                                    <div class="col-auto form-check-inline">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="any-history-metabolic-disorder"
+                                                id="any-history-metabolic-disorder-yes" value="option1">
+                                            <label class="form-check-label" for="any-history-metabolic-disorder-yes"> Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="any-history-metabolic-disorder"
+                                                id="any-history-metabolic-disorder-no" value="option2">
+                                            <label class="form-check-label" for="any-history-metabolic-disorder-no"> No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                        
+
                     </div>
-                </div>
+                    <!-- row 1 -->
+                    <!-- ==================================================================================================== -->
 
-                <div class="form-group col-md-6">
-                    <label for="gmfcs-class">GMFCS Class</label>
-                    <input type="text" class="form-control" id="gmfcs-class" placeholder="GMFCS Class">
-                </div>
 
-                <div class="form-group col-md-6">
-                    <label for="child-receiving-physio">Is Child Receiving Physiotherapy</label>
-                    <input type="text" class="form-control" id="child-receiving-physio" placeholder="Is Child Receiving Physiotherapy">
-                </div>
+                    <!-- ==================================================================================================== -->
+                    <!-- BUTTON Save -->
+                    <div class="mt-4">
 
-                <div class="form-group col-md-6">
-                    <label for="frequency-physio">Frequency of Physio Sessions</label>
-                    <input type="text" class="form-control" id="frequency-physio" placeholder="Describe the Frequency of Physio Sessions">
-                </div>
+                        <button type="submit" class="btn btn-primary">Save</button>
 
-                <div class="form-group col-md-6">
-                    <label for="age-commencement-physio">Age at commencement of physio</label>
-                    <input type="text" class="form-control" id="age-commencement-physio" placeholder="Age at commencement of physio">
-                </div>
-
-                <div class="form-group col-md-6">
-                    <label for="duration-physiotherapy">Duration of Physiotherapy</label>
-                    <input type="text" class="form-control" id="duration-physiotherapy" placeholder="Duration of Physiotherapy">
-                </div>
-
-                <!-- ANY ORTHO INTERVENTIONS? -->
-                <div class="form-group col-md-6 ">
-                    <label for="orthopedic-interventions">Any Orthopedic Interventions?</label>
-                    <div class="col-md-12 form-check-inline check-group">
-                        <div class="col-md-12">
-                        <div class="col-auto form-check-inline">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="orthopedic-interventions" id="orthopedic-interventions-yes" value="option1">
-                                <label class="form-check-label" for="orthopedic-interventions-yes"> Yes </label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="orthopedic-interventions" id="orthopedic-interventions-no" value="option2">
-                                <label class="form-check-label" for="orthopedic-interventions-no"> No </label>
-                            </div>
-                        </div>
-                        </div>
                     </div>
+                    <!-- ==================================================================================================== -->
+
                 </div>
-
-                <div class="form-group col-md-6">
-                    <label for="if-yes-type-intervention">If Yes, Type of Intervention</label>
-                    <input type="text" class="form-control" id="if-yes-type-intervention" placeholder="If Yes, Type of Intervention">
-                </div>
-                <!-- ANY ORTHO INTERVENTIONS END -->
-
-                <!-- ANY ORTHO INTERVENTIONS? -->
-                <div class="form-group col-md-6 ">
-                    <label for="assistive-locomotor-device">Does Child have any assistive locomotor device?</label>
-                    <div class="col-md-12 form-check-inline check-group">
-                        <div class="col-md-12">
-                        <div class="col-auto form-check-inline">
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="assistive-locomotor-device" id="assistive-locomotor-device-yes" value="option1">
-                                <label class="form-check-label" for="assistive-locomotor-device-yes"> Yes </label>
-                            </div>
-                            <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="assistive-locomotor-device" id="assistive-locomotor-device-no" value="option2">
-                                <label class="form-check-label" for="assistive-locomotor-device-no"> No </label>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="form-group col-md-6">
-                    <label for="if-yes-type-intervention">If Yes, who provide it?</label>
-                    <input type="text" class="form-control" id="if-yes-type-intervention" placeholder="If Yes, who provide it?">
-                </div>
-                <!-- ANY ORTHO INTERVENTIONS END -->
-
-
-            <!-- CLOSING SECTION -->
-            </div>
-            <!-- Highest motor Milestone Attained ROW END-->
-            <!-- ==================================================================================================== -->
-
-
-
-            <!-- ==================================================================================================== -->
-            <!-- BUTTON Save -->
-            <div class="mt-4">
-                
-                <button type="submit" class="btn btn-primary">Save</button>
-
-            </div>
-                <!-- ==================================================================================================== -->
-
-            </div>
-          </form>
+            </form>
         </div>
 
     </div>
-    
+
 </body>
+
 </html>

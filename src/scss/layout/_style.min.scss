@@ -230,7 +230,7 @@ input{
 .check-group{
   border:1px solid #ddd;
   border-radius: 4px;
-  padding: 0.39rem!important;
+  padding: 0.28rem!important;
   
 }
 .check-label-m{
@@ -243,4 +243,29 @@ input{
 
 .check-label-mr{
   margin-right: 20px!important;
+}
+#coluna1, #coluna2{
+  padding:10px;
+}
+
+#coluna1 > .col-md-12, #coluna2 > .col-md-12 {
+ margin-bottom: 10px;;
+}
+#coluna1 > .col-md-12 > .form-check, #coluna2 > .col-md-12 > .form-check{
+  justify-content: left!important;
+  align-items: start!important;
+ }
+ .form-check  > .form-check-input, .form-check  > .form-check-input{
+   margin-top: 5px!important;
+ }
+
+ .risk-states{
+   width: 100%!important;
+   left: -15px;
+   //TODO..remover da view mobile
+   position: relative;
+ }
+
+ .other-states{
+  width: 100%!important;
 }

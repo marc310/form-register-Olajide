@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form 4 Olajide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <script src="src/js/jquery.js"></script>
+    <link href="src/css/style.css" rel="stylesheet">
+    <link href="src/css/all.css" rel="stylesheet"> <!-- fontawesome -->
+    <script src="src/js/script.js"></script>
+    <script src="src/js/bootstrap.js"></script>
+    <script src="src/js/popper.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="mt-5 mb-5">
+            <h1>Past Medical History</h1>
+        </div>
+
+        <div class="container card sombra mb-5">
+            <form>
+                <div class="container mb-5 mt-5">
+
+                    <div class="form-row">
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-4 col-sm-12">
+                        <label for="any-history-nnj">Any history of NNJ?</label>
+                        <div class="col-md-12 form-check-inline check-group">
+                            <div class="col-md-12">
+                                <div class="col-auto form-check-inline">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="any-history-nnj"
+                                            id="any-history-nnj-yes" value="option1">
+                                        <label class="form-check-label" for="any-history-nnj-yes"> Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="any-history-nnj"
+                                            id="any-history-nnj-no" value="option2">
+                                        <label class="form-check-label" for="any-history-nnj-no"> No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-8 col-sm-12">
+                        <label for="indication-hospital-admission">Indication for hospital admission</label>
+                        <input type="text" class="form-control" id="indication-hospital-admission"
+                            placeholder="Describe the indication">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-4 col-sm-12">
+                        <label for="age-illness">Age at illness</label>
+                        <input type="text" class="form-control" id="age-illness"
+                            placeholder="Describe the illness">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-4 col-sm-12">
+                        <label for="duration-hospitalization">Duration of hospitalisation</label>
+                        <input type="text" class="form-control" id="duration-hospitalization"
+                            placeholder="Describe the duration time">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-4 col-sm-12">
+                        <label for="admission-due-complication">Was Admission due to a complication of CP?</label>
+                        <div class="col-md-12 form-check-inline check-group">
+                            <div class="col-md-12">
+                                <div class="col-auto form-check-inline">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="admission-due-complication"
+                                            id="admission-due-complication-yes" value="option1">
+                                        <label class="form-check-label" for="admission-due-complication-yes"> Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="admission-due-complication"
+                                            id="admission-due-complication-no" value="option2">
+                                        <label class="form-check-label" for="admission-due-complication-no"> No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-4 col-sm-12">
+                        <label for="admission-related-aetiology-cp">Was Admission related to the aetiology of CP?</label>
+                        <div class="col-md-12 form-check-inline check-group">
+                            <div class="col-md-12">
+                                <div class="col-auto form-check-inline">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="admission-related-aetiology-cp"
+                                            id="admission-related-aetiology-cp-yes" value="option1">
+                                        <label class="form-check-label" for="admission-related-aetiology-cp-yes"> Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="admission-related-aetiology-cp"
+                                            id="admission-related-aetiology-cp-no" value="option2">
+                                        <label class="form-check-label" for="admission-related-aetiology-cp-no"> No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-4 col-sm-12">
+                        <label for="previous-icu-admission">Any previous ICU admission?</label>
+                        <div class="col-md-12 form-check-inline check-group">
+                            <div class="col-md-12">
+                                <div class="col-auto form-check-inline">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="previous-icu-admission"
+                                            id="previous-icu-admission-yes" value="option1">
+                                        <label class="form-check-label" for="previous-icu-admission-yes"> Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="previous-icu-admission"
+                                            id="previous-icu-admission-no" value="option2">
+                                        <label class="form-check-label" for="previous-icu-admission-no"> No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="title-form mb-4 mt-4 col-md-12">
+                        <h2>Risk factors for CP</h2>
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-4 col-sm-12">
+                        <label for="risk-cp-identified">Risk for CP identified?</label>
+                        <div class="col-md-12 form-check-inline check-group">
+                            <div class="col-md-12">
+                                <div class="col-auto form-check-inline">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="risk-cp-identified"
+                                            id="risk-cp-identified-yes" value="option1">
+                                        <label class="form-check-label" for="risk-cp-identified-yes"> Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="risk-cp-identified"
+                                            id="risk-cp-identified-no" value="option2">
+                                        <label class="form-check-label" for="risk-cp-identified-no"> No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="title-form mb-4 mt-4 col-md-12">
+                        <h2>Investigations</h2>
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-4 col-sm-12">
+                        <label for="cranial-mri-scan">Cranial MRI/CT scan</label>
+                        <div class="col-md-12 form-check-inline check-group">
+                            <div class="col-md-12">
+                                <div class="col-auto form-check-inline">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="cranial-mri-scan"
+                                            id="cranial-mri-scan-yes" value="option1">
+                                        <label class="form-check-label" for="cranial-mri-scan-yes"> Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="cranial-mri-scan"
+                                            id="cranial-mri-scan-no" value="option2">
+                                        <label class="form-check-label" for="cranial-mri-scan-no"> No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-8 col-sm-12">
+                        <label for="if-yes-give-results">If yes, give results</label>
+                        <input type="text" class="form-control" id="if-yes-give-results"
+                            placeholder="Input details">
+                    </div>
+                    <!-- ==================================================================================================== -->
+
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-4 col-sm-12">
+                        <label for="eeg">EEG</label>
+                        <div class="col-md-12 form-check-inline check-group">
+                            <div class="col-md-12">
+                                <div class="col-auto form-check-inline">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="eeg"
+                                            id="eeg-yes" value="option1">
+                                        <label class="form-check-label" for="eeg-yes"> Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="eeg"
+                                            id="eeg-no" value="option2">
+                                        <label class="form-check-label" for="eeg-no"> No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-8 col-sm-12">
+                        <label for="if-eeg-give-results">If yes, give results</label>
+                        <input type="text" class="form-control" id="if-eeg-give-results"
+                            placeholder="Input details">
+                    </div>
+                    <!-- ==================================================================================================== -->
+
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-12 col-sm-12">
+                        <label for=""><strong> Likely risk factors for CP </strong>: mark as appropriate</label>
+                        <div class="col-md-12 form-check-inline check-group">
+                            <div id="risk-factors" class="col-md-12 form-inline">
+
+                                <!-- ==================================================================================================== -->
+                                <!-- ==================================================================================================== -->
+                                <div id="coluna1" class="col-md-6 col-sm-12">
+                                    <!-- ==================================================================================================== -->
+                                <div class="col-md-12">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="severe-perinatal-asphyxia" value="option1">
+                                        <label class="form-check-label" for="severe-perinatal-asphyxia">Severe Perinatal Asphyxia</label>
+                                    </div>
+                                </div>
+                                <!-- ==================================================================================================== -->
+                                
+                                <!-- ==================================================================================================== -->
+                                <div class="col-md-12">
+                                    <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="nn-meningits" value="option2">
+                                    <label class="form-check-label" for="nn-meningits">NN Meningits</label>
+                                    </div>
+                                </div>
+                                <!-- ==================================================================================================== -->
+
+                                <!-- ==================================================================================================== -->
+                                <div class="col-md-12">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="bilirubin-encephalopathy" value="option3">
+                                        <label class="form-check-label" for="bilirubin-encephalopathy">Bilirubin Encephalopathy</label>
+                                    </div>
+                                </div>
+                                <!-- ==================================================================================================== -->
+
+                                <!-- ==================================================================================================== -->
+                                <div class="col-md-12">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="checkbox" id="exposure-radiation" value="option4">
+                                        <label class="form-check-label" for="exposure-radiation">Exposure To Radiation</label>
+                                    </div>
+                                </div>
+                                <!-- ==================================================================================================== -->
+                                
+                                <!-- ==================================================================================================== -->
+                                <div class="col-md-12">
+                                    <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="intrauterine-infection" value="option5">
+                                    <label class="form-check-label" for="intrauterine-infection">Intrauterine Infection</label>
+                                    </div>
+                                </div>
+                                <!-- ==================================================================================================== -->
+                                
+                                <!-- ==================================================================================================== -->
+                                <div class="col-md-12">
+                                    <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="maternal-complications-abruptio" value="option6">
+                                    <label class="form-check-label" for="maternal-complications-abruptio">
+                                        Maternal complications abruptio, HT, DM, Pre/eclampsia, Renal disease
+                                    </label>
+                                    </div>
+                                </div>
+                                <!-- ==================================================================================================== -->
+                                
+                                <!-- ==================================================================================================== -->
+                                <div class="col-md-12">
+                                    <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="prolonged-rupture" value="option7">
+                                    <label class="form-check-label" for="prolonged-rupture">Prolonged Rupture of Membranes</label>
+                                    </div>
+                                </div>
+                                <!-- ==================================================================================================== -->
+                                
+                                <!-- ==================================================================================================== -->
+                                <div class="col-md-12">
+                                    <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="cns-malformation" value="option8">
+                                    <label class="form-check-label" for="cns-malformation">Congenital CNS Malformation</label>
+                                    </div>
+                                </div>
+                                
+                                <!-- ==================================================================================================== -->
+                                <div class="form-group col-md-12 col-sm-12 form-inline ">
+                                    <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" placeholder="Describe the State Type" id="other-malformation" value="option9">
+                                    <label class="form-check-label" for="other-malformation">Any Other Congenital Malformation</label>
+                                </div>
+                                <div class="col-md-12 mb-2 mt-2 ">
+
+                                    <label for="congenital-state"></label>
+                                    <input type="text" class="form-control risk-states" id="congenital-state"
+                                        placeholder="Describe State of Other Congenital Malformation">
+                                    </div>
+                                </div>
+                                <!-- ==================================================================================================== -->
+                                
+                                <!-- ==================================================================================================== -->
+                                <div class="form-group col-md-12 col-sm-12 form-inline ">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input " type="checkbox" id="maternal-drug" value="option10">
+                                        <label class="form-check-label" for="maternal-drug">Maternal Drug/Alcohol Exposure</label>
+                                    </div>
+                                    
+                                    <div class="col-md-12 mb-2 mt-2 ">
+                                        <label for="drug-state"></label>
+                                        <input type="text" class="form-control risk-states" id="drug-state"
+                                            placeholder="State Type Of Drug">
+                                    </div>
+                            </div>
+                                <!-- ==================================================================================================== -->
+                    
+                                </div>
+                                <!-- ==================================================================================================== -->
+                                <!-- ==================================================================================================== -->
+                                 
+                                <!-- ==================================================================================================== -->
+                                <!-- ==================================================================================================== -->
+                                <div id="coluna2" class="col-md-6 col-sm-12">
+                                    
+                                <!-- ==================================================================================================== -->
+                                <div class="col-md-12">
+                                    <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="prematurity" value="option11">
+                                    <label class="form-check-label" for="prematurity">Prematurity</label>
+                                    </div>
+                                </div>
+                                <!-- ==================================================================================================== -->
+                               
+                                <!-- ==================================================================================================== -->
+                                <div class="col-md-12">
+                                    <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="low-birth-weight" value="option12">
+                                    <label class="form-check-label" for="low-birth-weight">Low Birth Weight</label>
+                                    </div>
+                                </div>
+                                <!-- ==================================================================================================== -->
+                               
+                                <!-- ==================================================================================================== -->
+                                <div class="col-md-12">
+                                    <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="traumatic-delivery" value="option13">
+                                    <label class="form-check-label" for="traumatic-delivery">Traumatic Delivery</label>
+                                    </div>
+                                </div>
+                                <!-- ==================================================================================================== -->
+                               
+                                <!-- ==================================================================================================== -->
+                                <div class="col-md-12">
+                                    <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="intracranial-infection" value="option14">
+                                    <label class="form-check-label" for="intracranial-infection">Intracranial Infections: Meningits/Encephalitis</label>
+                                    </div>
+                                </div>
+                                <!-- ==================================================================================================== -->
+                               
+                                <!-- ==================================================================================================== -->
+                                <div class="col-md-12">
+                                    <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="metabolic-disorder"  value="option15">
+                                    <label class="form-check-label" for="metabolic-disorder">Metabolic Disorder</label>
+                                    </div>
+                                </div>
+                                <!-- ==================================================================================================== -->
+                               
+                                <!-- ==================================================================================================== -->
+                                <div class="col-md-12">
+                                    <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="traumatic-brain-injury" value="option16">
+                                    <label class="form-check-label" for="traumatic-brain-injury">Traumatic Brain Injury</label>
+                                    </div>
+                                </div>
+                                <!-- ==================================================================================================== -->
+                               
+                                <!-- ==================================================================================================== -->
+                                <div class="col-md-12">
+                                    <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="hypoxic-brain-injury" value="option17">
+                                    <label class="form-check-label" for="hypoxic-brain-injury">Hypoxic Brain Injury</label>
+                                    </div>
+                                </div>
+                                <!-- ==================================================================================================== -->
+                               
+                                <!-- ==================================================================================================== -->
+                                <div class="col-md-12">
+                                    <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="checkbox" id="multiple-births" value="option18">
+                                    <label class="form-check-label" for="multiple-births">Multiple Births</label>
+                                    </div>
+                                </div>
+                                <!-- ==================================================================================================== -->
+                               
+                                <!-- ==================================================================================================== -->
+                                <div class="form-group col-md-12 col-sm-12 form-inline ">
+                                    <div class="form-check form-check-inline">
+                                    <input class="form-check-input " type="checkbox" id="stroke" value="option10">
+                                    <label class="form-check-label" for="stroke">Stroke</label>
+                                </div>
+                                <div class="col-md-12 col-sm-12 mb-2 mt-2">
+                                    <label for="stroke"></label>
+                                    <input type="text" class="form-control risk-states" id="stroke-details"
+                                        placeholder="Give Stroke Details">
+                                    </div>
+                                </div>
+                                <!-- ==================================================================================================== -->
+
+                                <!-- ==================================================================================================== -->
+                                
+                                <div class="form-group col-md-12 col-sm-12 ">
+                                    <label for="any-other-state">Any Other State</label>
+                                    <input type="text" class="form-control other-states mb-2 mt-2" id="any-other-state"
+                                        placeholder="Describe the state">
+                                </div>
+                                <!-- ==================================================================================================== -->
+                    
+
+                                
+                                </div>
+                                <!-- ==================================================================================================== -->
+                                <!-- ==================================================================================================== -->
+
+                                
+                                            
+                            </div>
+                        </div>
+                                
+                               
+
+                    </div>
+                    <!-- ==================================================================================================== -->
+
+
+
+
+
+
+                </div>
+
+                    <!-- ==================================================================================================== -->
+                    <!-- BUTTON Save -->
+                    <div class="mt-4">
+
+                        <button type="submit" class="btn btn-primary">Save</button>
+
+                    </div>
+                    <!-- ==================================================================================================== -->
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
