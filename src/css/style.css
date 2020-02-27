@@ -391,6 +391,9 @@ input:hover {
 .other-states {
   width: 100% !important; }
 
+#growth-indices > input {
+  width: 100%; }
+
 /* MEDIA QUERY'S */
 @media (max-width: 800px) {
   .timeline:after {
