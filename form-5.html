@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form 5 Olajide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <script src="src/js/jquery.js"></script>
+    <link href="src/css/style.css" rel="stylesheet">
+    <link href="src/css/all.css" rel="stylesheet"> <!-- fontawesome -->
+    <script src="src/js/script.js"></script>
+    <script src="src/js/bootstrap.js"></script>
+    <script src="src/js/popper.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="mt-5 mb-5">
+            <h1>Aetiologic Classification of CP</h1>
+        </div>
+
+        <div class="container card sombra mb-5">
+            <form>
+                <div class="container mb-5 mt-5">
+
+                <!-- ==================================================================================================== -->
+                <!-- ==================================================================================================== -->
+                <div class="form-row">
+                <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="prenatal-perinatal-postnatal">Prenatal / Perinatal / Postnatal</label>
+                        <div class="col-md-12 form-check-inline check-group">
+                            <div class="col-md-12">
+                                <div class="col-auto form-check-inline">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="prenatal-perinatal-postnatal"
+                                            id="prenatal" value="option1">
+                                        <label class="form-check-label" for="prenatal"> Prenatal
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="prenatal-perinatal-postnatal"
+                                            id="perinatal" value="option2">
+                                        <label class="form-check-label" for="perinatal"> Perinatal
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="prenatal-perinatal-postnatal"
+                                            id="postnatal" value="option2">
+                                        <label class="form-check-label" for="postnatal"> Postnatal
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="presumed-cause-cp">Presumed Cause of CP</label>
+                        <input type="text" class="form-control" id="presumed-cause-cp"
+                            placeholder="Describe the presumed cause">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="postnatal-cp-state-age-brain-injury">For Postnatal CP, state age at brain injury</label>
+                        <input type="text" class="form-control" id="postnatal-cp-state-age-brain-injury"
+                            placeholder="Describe the state age at brain injury">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="title-form mb-4 mt-4 col-md-12">
+                        <h2>Co-Morbidities</h2>
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="child-have-comorbidities">Does child have comorbidities?</label>
+                        <div class="col-md-12 form-check-inline check-group">
+                            <div class="col-md-12">
+                                <div class="col-auto form-check-inline">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="child-have-comorbidities"
+                                            id="child-have-comorbidities-yes" value="option1">
+                                        <label class="form-check-label" for="child-have-comorbidities-yes"> Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="child-have-comorbidities"
+                                            id="child-have-comorbidities-no" value="option2">
+                                        <label class="form-check-label" for="child-have-comorbidities-no"> No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==================================================================================================== -->
+
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="child-received-visual-assessment">Has Child received visual assessment by ophthalmologist?</label>
+                        <div class="col-md-12 form-check-inline check-group">
+                            <div class="col-md-12">
+                                <div class="col-auto form-check-inline">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="child-received-visual-assessment"
+                                            id="child-received-visual-assessment-yes" value="option1">
+                                        <label class="form-check-label" for="child-received-visual-assessment-yes"> Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="child-received-visual-assessment"
+                                            id="child-received-visual-assessment-no" value="option2">
+                                        <label class="form-check-label" for="child-received-visual-assessment-no"> No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==================================================================================================== -->
+
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="child-received-hearing-assessment">Has Child received hearing assessment?</label>
+                        <div class="col-md-12 form-check-inline check-group">
+                            <div class="col-md-12">
+                                <div class="col-auto form-check-inline">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="child-received-hearing-assessment"
+                                            id="child-received-hearing-assessment-yes" value="option1">
+                                        <label class="form-check-label" for="child-received-hearing-assessment-yes"> Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="child-received-hearing-assessment"
+                                            id="child-received-hearing-assessment-no" value="option2">
+                                        <label class="form-check-label" for="child-received-hearing-assessment-no"> No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==================================================================================================== -->
+
+                    <!-- ==================================================================================================== -->
+                    <div class="title-form mb-4 mt-4 col-md-12">
+                        <h2>Co-Morbidities identified in child and provide details</h2>
+                    </div>
+                    <!-- ==================================================================================================== -->
+
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="visual-impairment">Visual Impairment</label>
+                        <input type="text" class="form-control" id="visual-impairment"
+                            placeholder="Describe the Visual Impairment">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                                        
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="type-visual-impairment">Type of Visual Impairment</label>
+                        <input type="text" class="form-control" id="type-visual-impairment"
+                            placeholder="Describe the Type of Visual Impairment">
+                    </div>
+                    <!-- ==================================================================================================== -->
+
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="hearing-impairment">Hearing Impairment</label>
+                        <input type="text" class="form-control" id="hearing-impairment"
+                            placeholder="Describe the Hearing Impairment">
+                    </div>
+                    <!-- ==================================================================================================== -->
+
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="type-hearing-impairment">Type of Visual Impairment</label>
+                        <input type="text" class="form-control" id="type-hearing-impairment"
+                            placeholder="Describe the Type of Visual Impairment">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                   
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="epilepsy">Epilepsy</label>
+                        <input type="text" class="form-control" id="epilepsy"
+                            placeholder="">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="type-epilepsy">Type of Epilepsy</label>
+                        <input type="text" class="form-control" id="type-epilepsy"
+                            placeholder="">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-12 col-sm-12">
+                        <label for="speech-problems">Speech Problems</label>
+                        <input type="text" class="form-control" id="speech-problems"
+                            placeholder="Describe the Speech Problems">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="intellectual-disability">Intellectual Disability</label>
+                        <input type="text" class="form-control" id="intellectual-disability"
+                            placeholder="Describe">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="report-iq-assessment">Report Iq Assessment</label>
+                        <input type="text" class="form-control" id="report-iq-assessment"
+                            placeholder="Report Iq Assessment">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-12 col-sm-12">
+                        <label for="autism-spectrum-disorder">autism-spectrum-disorder</label>
+                        <input type="text" class="form-control" id="autism-spectrum-disorder"
+                            placeholder="autism-spectrum-disorder">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                                  
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-12 col-sm-12">
+                        <label for="adhd">ADHD</label>
+                        <input type="text" class="form-control" id="adhd"
+                            placeholder="ADHD">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-12 col-sm-12">
+                        <label for="behavioural-problems">Behavioural Problems</label>
+                        <input type="text" class="form-control" id="behavioural-problems"
+                            placeholder="Behavioural Problems">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-12 col-sm-12">
+                        <label for="feeding-dificulties">Feeding Dificulties</label>
+                        <input type="text" class="form-control" id="feeding-dificulties"
+                            placeholder="Feeding Dificulties">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-12 col-sm-12">
+                        <label for="growth-impairment">Growth Impairment</label>
+                        <input type="text" class="form-control" id="growth-impairment"
+                            placeholder="Growth Impairment">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="microcephaly">Microcephaly</label>
+                        <input type="text" class="form-control" id="microcephaly"
+                            placeholder="Microcephaly">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="col-md-6 col-sm-12 mb-3">
+                        <label for="head-circumference">Head Circumference</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" id="head-circumference"
+                            placeholder="Input circumference" aria-describedby="input-head-circumference" required>
+                                    <div class="input-group-append">
+                                        <span class="input-group-text" id="input-head-circumference">cm</span>
+                                    </div>
+                        </div>
+                    </div>
+                    <!-- ==================================================================================================== -->
+
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-12 col-sm-12">
+                        <label for="medications">Medications</label>
+                        <input type="text" class="form-control" id="medications"
+                            placeholder="List medications if any">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="title-form mb-4 mt-4 col-md-12">
+                        <h2>Family History</h2>
+                    </div>
+                    <!-- ==================================================================================================== -->
+
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="father-highest-level-education">Father'S Highest Level Of Education</label>
+                        <input type="text" class="form-control" id="father-highest-level-education"
+                            placeholder="Father'S Highest Level Of Education">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="father-occupation">Father Occupation</label>
+                        <input type="text" class="form-control" id="father-occupation"
+                            placeholder="Father Occupation">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="mother-highest-level-education">Mother'S Highest Level Of Education</label>
+                        <input type="text" class="form-control" id="mother-highest-level-education"
+                            placeholder="Mother'S Highest Level Of Education">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="caregiver-highest-level-education">Caregiver'S Highest Level Of Education</label>
+                        <input type="text" class="form-control" id="caregiver-highest-level-education"
+                            placeholder="Caregiver'S Highest Level Of Education">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="caregiver-occupation">Caregiver Occupation</label>
+                        <input type="text" class="form-control" id="caregiver-occupation"
+                            placeholder="Caregiver Occupation">
+                    </div>
+                    <!-- ==================================================================================================== -->
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="family-history-developmental-disorder">Any family history of developmental disorder / delay?</label>
+                        <div class="col-md-12 form-check-inline check-group">
+                            <div class="col-md-12">
+                                <div class="col-auto form-check-inline">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="family-history-developmental-disorder"
+                                            id="family-history-developmental-disorder-yes" value="option1">
+                                        <label class="form-check-label" for="family-history-developmental-disorder-yes"> Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="family-history-developmental-disorder"
+                                            id="family-history-developmental-disorder-no" value="option2">
+                                        <label class="form-check-label" for="family-history-developmental-disorder-no"> No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-12 col-sm-12">
+                        <label for="if-yes-give-details">If yes, who</label>
+                        <input type="text" class="form-control" id="if-yes-who"
+                            placeholder="">
+                    </div>
+                    <!-- ==================================================================================================== -->
+
+                    <!-- ==================================================================================================== -->
+                    <div class="title-form mb-4 mt-4 col-md-12">
+                        <h2>Schooling History</h2>
+                    </div>
+                    <!-- ==================================================================================================== -->
+ <!-- ==================================================================================================== -->
+ <div class="form-group col-md-12 col-sm-12">
+    <label for="type-school">Type of School</label>
+    <div class="col-md-12 form-check-inline check-group">
+        <div class="col-md-12">
+            <div class="col-auto form-check-inline">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="type-school"
+                        id="type-school-mainstream" value="option1">
+                    <label class="form-check-label" for="type-school-mainstream"> Main Stream
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="type-school"
+                        id="special-school-no" value="option2">
+                    <label class="form-check-label" for="special-school-no"> Special School
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="type-school"
+                        id="not-enrolled-school" value="option3">
+                    <label class="form-check-label" for="not-enrolled-school"> Not Enrolled in a School
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="type-school"
+                        id="not-school-age" value="option3">
+                    <label class="form-check-label" for="not-school-age"> Not School Age
+                    </label>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ==================================================================================================== -->
+
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="child-enrolled-school">Is Child Enrolled In A School?</label>
+                        <div class="col-md-12 form-check-inline check-group">
+                            <div class="col-md-12">
+                                <div class="col-auto form-check-inline">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="child-enrolled-school"
+                                            id="child-enrolled-school-yes" value="option1">
+                                        <label class="form-check-label" for="child-enrolled-school-yes"> Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="child-enrolled-school"
+                                            id="child-enrolled-school-no" value="option2">
+                                        <label class="form-check-label" for="child-enrolled-school-no"> No
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="child-enrolled-school"
+                                            id="child-enrolled-school-no-age" value="option2">
+                                        <label class="form-check-label" for="child-enrolled-school-no-age"> Not School Age
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==================================================================================================== -->
+
+                   
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="child-repeatead-class">Has child ever repeated a class?</label>
+                        <div class="col-md-12 form-check-inline check-group">
+                            <div class="col-md-12">
+                                <div class="col-auto form-check-inline">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="child-repeatead-class"
+                                            id="child-repeatead-class-yes" value="option1">
+                                        <label class="form-check-label" for="child-repeatead-class-yes"> Yes
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="child-repeatead-class"
+                                            id="child-repeatead-class-no" value="option2">
+                                        <label class="form-check-label" for="child-repeatead-class-no"> No
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="child-repeatead-class"
+                                            id="child-repeatead-class-no-na" value="option2">
+                                        <label class="form-check-label" for="child-repeatead-class-no-na"> Not School N/A
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==================================================================================================== -->
+
+
+                    <!-- ==================================================================================================== -->
+                    <div class="title-form mb-4 mt-4 col-md-12">
+                        <h2>Immunisation History</h2>
+                    </div>
+                    <!-- ==================================================================================================== -->
+
+                    
+                    <!-- ==================================================================================================== -->
+                    <div class="form-group col-md-6 col-sm-12">
+                        <label for="immunisation-status">Immunisation Status</label>
+                        <div class="col-md-12 form-check-inline check-group">
+                            <div class="col-md-12">
+                                <div class="col-auto form-check-inline">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="immunisation-status"
+                                            id="immunisation-status-not" value="option1">
+                                        <label class="form-check-label" for="immunisation-status-not"> Not Immunized
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="immunisation-status"
+                                            id="immunisation-status-incomplete" value="option2">
+                                        <label class="form-check-label" for="immunisation-status-incomplete"> Incomplete
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="immunisation-status"
+                                            id="immunisation-status-up-date" value="option2">
+                                        <label class="form-check-label" for="immunisation-status-up-date"> Immunisation Up to date
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==================================================================================================== -->
+
+
+
+                <!-- ==================================================================================================== -->
+                </div>
+                <!-- ==================================================================================================== -->
+                <!-- ==================================================================================================== -->
+
+
+                    <!-- ==================================================================================================== -->
+                    <!-- BUTTON Save -->
+                    <div class="mt-4">
+
+                        <button type="submit" class="btn btn-primary">Save</button>
+
+                    </div>
+                    <!-- ==================================================================================================== -->
+
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
