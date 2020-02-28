@@ -8,6 +8,7 @@
     counter-reset: my-sec-counter;
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
+    background: $gray-300!important;
   }
   
   #DataTable {
@@ -270,4 +271,16 @@ input{
 }
 #growth-indices > input {
   width: 100%;
+}
+
+.label-gis{
+  margin-right: 61px;margin-left: 30px;/*! width: 20%; */
+}
+
+.input-gis{
+    width: 70%!important;
+}
+
+.card{
+  border-radius: 15px!important;
 }
