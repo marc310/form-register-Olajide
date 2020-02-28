@@ -4,6 +4,7 @@
 	Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
 	*/
 
+
   body {
     counter-reset: my-sec-counter;
     font-family: 'Open Sans', sans-serif;
@@ -295,3 +296,8 @@ input{
     color: $gray-600;
   }
 }
+
+//TODO ..
+// ajustar mediaquery pra mobile
+// tornar o icone verde menor
+// mover a seta "go to top" pra a esquerda

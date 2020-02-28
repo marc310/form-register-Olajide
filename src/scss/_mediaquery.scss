@@ -1,101 +1,76 @@
 
-// MEDIA QUERY
-// tablet grande 800px
-@media (max-width: $kindle-fire) {
-    .timeline:after{
-        left: 16.5%;
-    }
-    .timeline > li > .timeline-panel{
-        width: 75%;
-    }
-    .timeline > li > .timeline-badge{
-        left:21.5%;
-    }
-}
+// // MEDIA QUERY
+// // tablet grande 800px
 
-// tablet 769
+// @media (max-width: $kindle-fire) {
+
+// }
+// // tablet 769
 @media (max-width: $tablet) {
-   
-    ul.timeline:before {
-        left: 19%;
+    #progressbar{
+        padding:10px;
     }
-    .timeline > li > .timeline-panel{
-        width: 70%;
-        margin-bottom: 3%;
+    #progressbar li {
+        font-size: 13px!important;
     }
-    .timeline > li > .timeline-badge{
-        left:22%;
-    }
+    #progressbar li:before {
+        width: 30px!important;
+        height: 30px!important;
+        line-height: 25px!important;
+        font-size: 12px!important;
+      }
 }
-
 // mobile plus
 @media (max-width: $mobilePlus) {
-    //menu lateral
-    #menu-lateral > .card{
-        margin-top:40px;
+    .goto-top > i {
+        left: -40vw;
     }
-    .timeline:after{
-        left: 19%;
+    #progressbar{
+        padding:10px;
     }
-    ul.timeline:before {
-        left: 21%;
+    #progressbar li {
+        font-size: 10px!important;
     }
-    ul.timeline > li > .timeline-time{
-        margin-top:3px;
-    }
-    .timeline > li > .timeline-panel{
-        width: 70%;
-    }
-    .timeline > li > .timeline-badge{
-        left:25%;
+    #progressbar li:before {
+        width: 30px!important;
+        height: 30px!important;
+        line-height: 25px!important;
+        display: block;
+        font-size: 12px!important;
+        color: #ffffff;
+        background: lightgray;
+        border-radius: 50%;
+        margin: 0 auto 10px auto;
+        padding: 2px;
+      }
+
+      #progressbar li:after {
+        top: 15px!important;
+        width: 130%!important;
+        left: -15px!important;
     }
 }
-
 // mobile 414
 @media (max-width: $mobile) {
-    .timeline-heading > .float-right{
-        float:none!important;
+    .goto-top > i {
+        left: -40vw;
     }
-    .timeline:after{
-        left: 23.5%;
+    #progressbar{
+        padding:10px;
     }
-    ul.timeline:before {
-        left: 26.5%;
+    #progressbar li {
+        font-size: 10px!important;
     }
-    ul.timeline > li > .timeline-time{
-        margin-top:12px;
-        width: 25%;
-    }
+    #progressbar li:before {
+        width: 25px!important;
+        height: 25px!important;
+        line-height: 20px!important;
+        font-size: 12px!important;
+      }
 
-    ul.timeline > li > .timeline-panel {
-        width: calc(100% - 110px);
-        width: -moz-calc(100% - 110px);
-        width: -webkit-calc(100% - 110px);
-    }
-
-    ul.timeline > li > .timeline-badge {
-        left:23%;
-        margin-left: 0;
-        top: 27px;
-    }
-
-    ul.timeline > li > .timeline-panel {
-        float: right;
-    }
-
-    ul.timeline > li > .timeline-panel:before {
-        top:22px;
-        border-left-width: 0;
-        border-right-width: 15px;
-        left: -15px;
-        right: auto;
-    }
-
-    ul.timeline > li > .timeline-panel:after {
-        top:23px;
-        border-left-width: 0;
-        border-right-width: 14px;
-        left: -14px;
-        right: auto;
+    #progressbar li:after {
+        top: 15px!important;
+        width: 130%!important;
+        left: -15px!important;
     }
 }

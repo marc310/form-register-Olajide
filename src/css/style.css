@@ -20,20 +20,58 @@
 //
 //
 ************************************************************************************/
-/**************************************************************************************
-*
-*       C O D E X    V A R I Á V E I S    S T Y L E S H E E T
-*
-*************************************************************************************
-//
-//
-//  Especificações adicionais no Readme.md
-//  Utilização da biblioteca bootstrap e jquery
-//  instalação dos pacotes npm dentro da pasta vendor e estilos adicionais do tema
-//
-//
-************************************************************************************/
 /* SHADOW MIXINS */
+@media (max-width: 767px) {
+  #progressbar {
+    padding: 10px; }
+  #progressbar li {
+    font-size: 13px !important; }
+  #progressbar li:before {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 25px !important;
+    font-size: 12px !important; } }
+
+@media (max-width: 743px) {
+  .goto-top > i {
+    left: -40vw; }
+  #progressbar {
+    padding: 10px; }
+  #progressbar li {
+    font-size: 10px !important; }
+  #progressbar li:before {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 25px !important;
+    display: block;
+    font-size: 12px !important;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px; }
+  #progressbar li:after {
+    top: 15px !important;
+    width: 130% !important;
+    left: -15px !important; } }
+
+@media (max-width: 413px) {
+  .goto-top > i {
+    left: -40vw; }
+  #progressbar {
+    padding: 10px; }
+  #progressbar li {
+    font-size: 10px !important; }
+  #progressbar li:before {
+    width: 25px !important;
+    height: 25px !important;
+    line-height: 20px !important;
+    font-size: 12px !important; }
+  #progressbar li:after {
+    top: 15px !important;
+    width: 130% !important;
+    left: -15px !important; } }
+
 /* FRAGMENTOS DE ESTILIZAÇÃO DO ESTILO GERAL */
 /*
 	Max width before this PARTICULAR table gets nasty. This query will take effect for any screen smaller than 760px and also iPads specifically.
@@ -279,6 +317,134 @@ input:hover {
   cursor: pointer; }
   .goto-top > i:hover {
     color: #6c757d; }
+
+body {
+  background: #E5E5E5; }
+
+.clearfix:before, nav ul:before, .section .super-container:before, .section .container:before, .clearfix:after, nav ul:after, .section .super-container:after, .section .container:after {
+  content: "";
+  display: table; }
+
+.clearfix:after, nav ul:after, .section .super-container:after, .section .container:after {
+  clear: both; }
+
+.container > a {
+  color: #646e7d; }
+  .container > a:hover {
+    color: white; }
+
+nav {
+  position: relative;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: #262524; }
+  nav a {
+    text-decoration: none; }
+  nav ul li {
+    list-style: none;
+    color: #FFFFFF;
+    float: left;
+    font-size: 0.8em;
+    line-height: 3em;
+    padding: 0 1.2em; }
+    nav ul li a {
+      color: inherit;
+      text-decoration: none; }
+    nav ul li ~ li {
+      border-right: 1px solid #A3A2A2; }
+    nav ul li:last-child {
+      border: none; }
+    nav ul li:hover, nav ul li:active, nav ul li:focus {
+      cursor: pointer; }
+      nav ul li:hover, nav ul li:active, nav ul li:focus {
+        font-weight: bold; }
+      nav ul li:hover i, nav ul li:active i, nav ul li:focus i {
+        color: white; }
+    nav ul li.dropdown {
+      position: relative; }
+      nav ul li.dropdown i {
+        position: absolute;
+        bottom: 0.7em;
+        right: 0.5em;
+        transform: rotate(-45deg); }
+    nav ul li .fa {
+      vertical-align: middle;
+      color: #A3A2A2; }
+
+.section {
+  position: relative;
+  margin: 5% 8%;
+  margin-top: 5%;
+  bottom: 0; }
+  .section .super-container {
+    margin: 0.15em;
+    float: left;
+    width: 36.8%;
+    color: #FFFFFF;
+    background: #1175AE; }
+    .section .super-container .close {
+      float: right;
+      padding-right: 0.5em;
+      padding-top: 0.5em;
+      right: 0; }
+      .section .super-container .close i:hover {
+        font-weight: bold;
+        cursor: pointer; }
+    .section .super-container .info {
+      padding: 1.5em; }
+      .section .super-container .info h4 {
+        font-size: 1.5em;
+        font-weight: bold; }
+      .section .super-container .info p {
+        padding-top: 1em; }
+    .section .super-container .helper {
+      padding: 1.4em; }
+      .section .super-container .helper span i {
+        font-size: 7em; }
+      .section .super-container .helper ul {
+        float: right; }
+        .section .super-container .helper ul li {
+          padding-bottom: 1em;
+          list-style: none; }
+          .section .super-container .helper ul li i {
+            padding-right: 0.3em;
+            vertical-align: middle;
+            text-align: center; }
+          .section .super-container .helper ul li a {
+            text-decoration: none; }
+            .section .super-container .helper ul li a:hover {
+              cursor: pointer;
+              color: #009130; }
+          .section .super-container .helper ul li:last-child {
+            padding-bottom: 0.2em; }
+  .section .container {
+    width: 12%;
+    margin: 0.15em;
+    float: left;
+    background: #FFFFFF; }
+    .section .container:hover {
+      background: #1175AE;
+      cursor: pointer; }
+      .section .container:hover,
+      .section .container:hover i {
+        color: #FFFFFF; }
+    .section .container .top {
+      text-align: center;
+      padding: 1em 0; }
+    .section .container .subtitle {
+      text-align: center;
+      padding-bottom: 1.5em; }
+    .section .container .color-green {
+      color: #009130; }
+    .section .container .color-gray {
+      color: #646e7d; }
+    .section .container .color-purple {
+      color: #22a7f0; }
+
+footer {
+  clear: both;
+  min-height: 100px; }
 
 .pagination {
   display: inline-block;
@@ -542,46 +708,39 @@ input:hover {
   font-weight: 400; }
 
 #progressbar #step1:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f00c"; }
+  font-weight: 700;
+  content: "1"; }
 
 #progressbar #step2:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f00c"; }
+  font-weight: 700;
+  content: "2"; }
 
 #progressbar #step3:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f00c"; }
+  font-weight: 700;
+  content: "3"; }
 
 #progressbar #step4:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f00c"; }
+  font-weight: 700;
+  content: "4"; }
 
 #progressbar #step5:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f00c"; }
+  font-weight: 700;
+  content: "5"; }
 
 #progressbar #step6:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f00c"; }
+  font-weight: 700;
+  content: "6"; }
 
 #progressbar #step7:before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f00c"; }
+  font-weight: 700;
+  content: "7"; }
 
 #progressbar li:before {
-  width: 50px;
-  height: 50px;
-  line-height: 45px;
+  width: 40px;
+  height: 40px;
+  line-height: 35px;
   display: block;
-  font-size: 20px;
+  font-size: 15px;
   color: #ffffff;
   background: lightgray;
   border-radius: 50%;
@@ -613,70 +772,6 @@ input:hover {
   object-fit: cover; }
 
 /* MEDIA QUERY'S */
-@media (max-width: 800px) {
-  .timeline:after {
-    left: 16.5%; }
-  .timeline > li > .timeline-panel {
-    width: 75%; }
-  .timeline > li > .timeline-badge {
-    left: 21.5%; } }
-
-@media (max-width: 767px) {
-  ul.timeline:before {
-    left: 19%; }
-  .timeline > li > .timeline-panel {
-    width: 70%;
-    margin-bottom: 3%; }
-  .timeline > li > .timeline-badge {
-    left: 22%; } }
-
-@media (max-width: 743px) {
-  #menu-lateral > .card {
-    margin-top: 40px; }
-  .timeline:after {
-    left: 19%; }
-  ul.timeline:before {
-    left: 21%; }
-  ul.timeline > li > .timeline-time {
-    margin-top: 3px; }
-  .timeline > li > .timeline-panel {
-    width: 70%; }
-  .timeline > li > .timeline-badge {
-    left: 25%; } }
-
-@media (max-width: 413px) {
-  .timeline-heading > .float-right {
-    float: none !important; }
-  .timeline:after {
-    left: 23.5%; }
-  ul.timeline:before {
-    left: 26.5%; }
-  ul.timeline > li > .timeline-time {
-    margin-top: 12px;
-    width: 25%; }
-  ul.timeline > li > .timeline-panel {
-    width: calc(100% - 110px);
-    width: -moz-calc(100% - 110px);
-    width: -webkit-calc(100% - 110px); }
-  ul.timeline > li > .timeline-badge {
-    left: 23%;
-    margin-left: 0;
-    top: 27px; }
-  ul.timeline > li > .timeline-panel {
-    float: right; }
-  ul.timeline > li > .timeline-panel:before {
-    top: 22px;
-    border-left-width: 0;
-    border-right-width: 15px;
-    left: -15px;
-    right: auto; }
-  ul.timeline > li > .timeline-panel:after {
-    top: 23px;
-    border-left-width: 0;
-    border-right-width: 14px;
-    left: -14px;
-    right: auto; } }
-
 /* BOOTSTRAP */
 /*!
  * Bootstrap v4.4.1 (https://getbootstrap.com/)
@@ -820,8 +915,8 @@ a {
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #122154;
-    text-decoration: underline; }
+    color: #28a745;
+    text-decoration: none; }
 
 a:not([href]) {
   color: inherit;
@@ -3226,10 +3321,10 @@ fieldset:disabled a.btn {
   color: #1f3a93;
   text-decoration: none; }
   .btn-link:hover {
-    color: #122154;
-    text-decoration: underline; }
+    color: #28a745;
+    text-decoration: none; }
   .btn-link:focus, .btn-link.focus {
-    text-decoration: underline;
+    text-decoration: none;
     box-shadow: none; }
   .btn-link:disabled, .btn-link.disabled {
     color: #6c757d;
@@ -4570,7 +4665,7 @@ input[type="button"].btn-block {
   border: 1px solid #dee2e6; }
   .page-link:hover {
     z-index: 2;
-    color: #122154;
+    color: #28a745;
     text-decoration: none;
     background-color: #e9ecef;
     border-color: #dee2e6; }
@@ -6147,7 +6242,7 @@ button.bg-cinza-smoke:focus {
 .rounded-0 {
   border-radius: 0 !important; }
 
-.clearfix::after {
+.clearfix::after, nav ul::after, .section .super-container::after, .section .container::after {
   display: block;
   clear: both;
   content: ""; }

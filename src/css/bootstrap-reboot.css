@@ -105,8 +105,8 @@ a {
   text-decoration: none;
   background-color: transparent; }
   a:hover {
-    color: #0056b3;
-    text-decoration: underline; }
+    color: #28a745;
+    text-decoration: none; }
 
 a:not([href]) {
   color: inherit;
