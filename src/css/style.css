@@ -271,6 +271,15 @@ input:hover {
 .card {
   border-radius: 15px !important; }
 
+.goto-top > i {
+  font-size: 5rem;
+  color: #ced4da;
+  position: relative;
+  bottom: 90px;
+  cursor: pointer; }
+  .goto-top > i:hover {
+    color: #6c757d; }
+
 .pagination {
   display: inline-block;
   padding-left: 0;
@@ -435,7 +444,6 @@ input:hover {
 #msform fieldset:not(:first-of-type) {
   display: none; }
 
-#msform input,
 #msform textarea {
   padding: 8px 15px 8px 15px;
   border: 1px solid #ccc;

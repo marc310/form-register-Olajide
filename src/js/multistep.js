@@ -28,6 +28,7 @@ current_fs.css({
 'position': 'relative'
 });
 next_fs.css({'opacity': opacity});
+scrollToTop(800);
 },
 duration: 500
 });
@@ -56,6 +57,7 @@ current_fs.css({
 'position': 'relative'
 });
 previous_fs.css({'opacity': opacity});
+scrollToTop(600);
 },
 duration: 500
 });
@@ -73,4 +75,31 @@ $(".submit").click(function(){
 return false;
 })
 
+
+$(window).scroll(function () {
+    var top =  $(".goto-top");
+        if ( $('body').height() <= (    $(window).height() + $(window).scrollTop() + 200 )) {
+  top.animate({"margin-left": "0px"},1500);
+        } 
+        // else {
+        //     top.animate({"margin-left": "-100%"},1500);
+        // }
+    });
+
+    $(".goto-top").on('click', function () {
+        $("html, body").animate({scrollTop: 0}, 400);
+    });
+
+function scrollToTop(scrollDuration) {
+    var scrollStep = -window.scrollY / (scrollDuration / 15),
+        scrollInterval = setInterval(function(){
+        if ( window.scrollY != 0 ) {
+            window.scrollBy( 0, scrollStep );
+        }
+        else clearInterval(scrollInterval); 
+    },15);
+}
+
+
 });
+

@@ -284,3 +284,14 @@ input{
 .card{
   border-radius: 15px!important;
 }
+
+.goto-top > i {
+  font-size: 5rem;
+  color: $gray-400;
+	position: relative;
+	bottom: 90px;
+  cursor: pointer;
+  &:hover{
+    color: $gray-600;
+  }
+}
