@@ -10,6 +10,7 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     background: $gray-300!important;
+    color: $cinza;
   }
   
   #DataTable {
@@ -292,12 +293,9 @@ input{
 	position: relative;
 	bottom: 90px;
   cursor: pointer;
+  @include transition(background-color 250ms 150ms, color 650ms);
+
   &:hover{
     color: $gray-600;
   }
 }
-
-//TODO ..
-// ajustar mediaquery pra mobile
-// tornar o icone verde menor
-// mover a seta "go to top" pra a esquerda

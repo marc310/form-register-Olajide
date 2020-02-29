@@ -56,6 +56,11 @@
     left: -15px !important; } }
 
 @media (max-width: 413px) {
+  .helper-body {
+    margin-top: 0 !important; }
+  .helper-links {
+    padding-left: 40px !important;
+    padding-right: 40px !important; }
   .goto-top > i {
     left: -40vw; }
   #progressbar {
@@ -80,7 +85,8 @@ body {
   counter-reset: my-sec-counter;
   font-family: 'Open Sans', sans-serif;
   font-size: 12px;
-  background: #dee2e6 !important; }
+  background: #dee2e6 !important;
+  color: #646e7d; }
 
 #DataTable {
   position: relative;
@@ -314,137 +320,97 @@ input:hover {
   color: #ced4da;
   position: relative;
   bottom: 90px;
-  cursor: pointer; }
+  cursor: pointer;
+  -moz-transition: background-color 250ms 150ms, color 650ms;
+  -o-transition: background-color 250ms 150ms, color 650ms;
+  -webkit-transition: background-color 250ms 150ms, color 650ms;
+  transition: background-color 250ms 150ms, color 650ms; }
   .goto-top > i:hover {
     color: #6c757d; }
 
-body {
-  background: #E5E5E5; }
+.home-card {
+  border-bottom: 0.25rem solid #009130 !important; }
 
-.clearfix:before, nav ul:before, .section .super-container:before, .section .container:before, .clearfix:after, nav ul:after, .section .super-container:after, .section .container:after {
-  content: "";
-  display: table; }
+.center-icon {
+  text-align: center; }
+  .center-icon p {
+    margin-bottom: 0; }
 
-.clearfix:after, nav ul:after, .section .super-container:after, .section .container:after {
-  clear: both; }
-
-.container > a {
-  color: #646e7d; }
-  .container > a:hover {
-    color: white; }
-
-nav {
+.card-button {
+  background-color: #009130;
+  border-radius: 15px;
   position: relative;
-  left: 0;
-  right: 0;
-  top: 0;
-  background: #262524; }
-  nav a {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom: .25rem solid transparent;
+  -moz-transition: background-color 200ms 150ms, color 200ms;
+  -o-transition: background-color 200ms 150ms, color 200ms;
+  -webkit-transition: background-color 200ms 150ms, color 200ms;
+  transition: background-color 200ms 150ms, color 200ms; }
+  .card-button:hover {
+    background-color: white;
+    border-bottom: 0.25rem solid #009130 !important; }
+  .card-button a {
+    -moz-transition: background-color 100ms 150ms, color 200ms;
+    -o-transition: background-color 100ms 150ms, color 200ms;
+    -webkit-transition: background-color 100ms 150ms, color 200ms;
+    transition: background-color 100ms 150ms, color 200ms;
+    color: white;
     text-decoration: none; }
-  nav ul li {
-    list-style: none;
-    color: #FFFFFF;
-    float: left;
-    font-size: 0.8em;
-    line-height: 3em;
-    padding: 0 1.2em; }
-    nav ul li a {
-      color: inherit;
-      text-decoration: none; }
-    nav ul li ~ li {
-      border-right: 1px solid #A3A2A2; }
-    nav ul li:last-child {
-      border: none; }
-    nav ul li:hover, nav ul li:active, nav ul li:focus {
-      cursor: pointer; }
-      nav ul li:hover, nav ul li:active, nav ul li:focus {
-        font-weight: bold; }
-      nav ul li:hover i, nav ul li:active i, nav ul li:focus i {
-        color: white; }
-    nav ul li.dropdown {
-      position: relative; }
-      nav ul li.dropdown i {
-        position: absolute;
-        bottom: 0.7em;
-        right: 0.5em;
-        transform: rotate(-45deg); }
-    nav ul li .fa {
-      vertical-align: middle;
-      color: #A3A2A2; }
-
-.section {
-  position: relative;
-  margin: 5% 8%;
-  margin-top: 5%;
-  bottom: 0; }
-  .section .super-container {
-    margin: 0.15em;
-    float: left;
-    width: 36.8%;
-    color: #FFFFFF;
-    background: #1175AE; }
-    .section .super-container .close {
-      float: right;
-      padding-right: 0.5em;
-      padding-top: 0.5em;
-      right: 0; }
-      .section .super-container .close i:hover {
-        font-weight: bold;
-        cursor: pointer; }
-    .section .super-container .info {
-      padding: 1.5em; }
-      .section .super-container .info h4 {
-        font-size: 1.5em;
-        font-weight: bold; }
-      .section .super-container .info p {
-        padding-top: 1em; }
-    .section .super-container .helper {
-      padding: 1.4em; }
-      .section .super-container .helper span i {
-        font-size: 7em; }
-      .section .super-container .helper ul {
-        float: right; }
-        .section .super-container .helper ul li {
-          padding-bottom: 1em;
-          list-style: none; }
-          .section .super-container .helper ul li i {
-            padding-right: 0.3em;
-            vertical-align: middle;
-            text-align: center; }
-          .section .super-container .helper ul li a {
-            text-decoration: none; }
-            .section .super-container .helper ul li a:hover {
-              cursor: pointer;
-              color: #009130; }
-          .section .super-container .helper ul li:last-child {
-            padding-bottom: 0.2em; }
-  .section .container {
-    width: 12%;
-    margin: 0.15em;
-    float: left;
-    background: #FFFFFF; }
-    .section .container:hover {
-      background: #1175AE;
-      cursor: pointer; }
-      .section .container:hover,
-      .section .container:hover i {
-        color: #FFFFFF; }
-    .section .container .top {
-      text-align: center;
-      padding: 1em 0; }
-    .section .container .subtitle {
-      text-align: center;
-      padding-bottom: 1.5em; }
-    .section .container .color-green {
+    .card-button a:hover {
       color: #009130; }
-    .section .container .color-gray {
-      color: #646e7d; }
-    .section .container .color-purple {
-      color: #22a7f0; }
 
-footer {
-  clear: both;
-  min-height: 100px; }
+.card-body > p {
+  margin-top: 10px; }
+
+/* helper */
+.helper-body {
+  margin-top: 1rem; }
+
+.helper-icon {
+  padding-left: 50px !important;
+  padding-right: 50px !important; }
+
+.helper-links {
+  margin: 0; }
+  .helper-links li {
+    list-style: none; }
+    .helper-links li:first-child {
+      margin-top: 20px; }
+    .helper-links li i {
+      margin-bottom: 10px; }
+
+/* helper */
+.topbar {
+  height: 3rem; }
+
+.sidebar .nav-item .nav-link .img-profile, .topbar .nav-item .nav-link .img-profile {
+  height: 2rem;
+  width: 2rem; }
+
+.topbar .nav-item .nav-link {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  padding: 0 .75rem; }
+
+.topbar.navbar-light .navbar-nav .nav-item .nav-link {
+  color: #646e7d; }
+
+footer.sticky-footer .copyright {
+  line-height: 1;
+  font-size: .8rem; }
+
+.text-center {
+  text-align: center !important; }
+
+/* margin pattern */
+.mb-6 {
+  margin-bottom: 4rem; }
 
 .pagination {
   display: inline-block;
@@ -462,7 +428,7 @@ footer {
   padding: 6px 12px;
   margin-left: -1px;
   line-height: 1.42857143;
-  color: #337ab7;
+  color: #22a7f0;
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #ddd; }
@@ -483,7 +449,7 @@ footer {
 .pagination > li > span:focus,
 .pagination > li > span:hover {
   z-index: 2;
-  color: #23527c;
+  color: #1f3a93;
   background-color: #eee;
   border-color: #ddd; }
 
@@ -496,8 +462,8 @@ footer {
   z-index: 3;
   color: #fff;
   cursor: default;
-  background-color: #337ab7;
-  border-color: #337ab7; }
+  background-color: #22a7f0;
+  border-color: #22a7f0; }
 
 .pagination > .disabled > a,
 .pagination > .disabled > a:focus,
@@ -835,7 +801,6 @@ body {
   font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
   text-align: left;
   background-color: #fff; }
 
@@ -911,7 +876,6 @@ sup {
   top: -.5em; }
 
 a {
-  color: #1f3a93;
   text-decoration: none;
   background-color: transparent; }
   a:hover {
@@ -6242,7 +6206,7 @@ button.bg-cinza-smoke:focus {
 .rounded-0 {
   border-radius: 0 !important; }
 
-.clearfix::after, nav ul::after, .section .super-container::after, .section .container::after {
+.clearfix::after {
   display: block;
   clear: both;
   content: ""; }

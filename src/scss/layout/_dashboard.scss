@@ -1,216 +1,94 @@
-// @import url('https://fonts.googleapis.com/css?family=Maven+Pro');
-
-body {
-	background: $bg-color;
-	// font-family: 'Maven Pro', sans-serif;
+.home-card{
+	border-bottom: .25rem solid $verde !important;
 }
-
-.clearfix {
-		&:before,
-		&:after {
-			content: "";
-			display: table;
-		}
-		&:after {
-			clear: both;
-		}
-}
-.container > a{
-	color:$cinza;
-	&:hover{
-		color: $branco;
+.center-icon{
+	text-align: center;
+	p{
+		margin-bottom: 0;
 	}
-  }
-
-//--------- NAVBAR ------------
-nav {
+}
+.card-button{
+	background-color: $verde;
+	border-radius: 15px;
 	position: relative;
-	left: 0;
-	right: 0;
-	top: 0;
-	background: $nav-bg;
-	a{
-		text-decoration: none;
-	}
-	ul {
-		//CLEARFIX
-		@extend .clearfix;
-		
-		li {
-			list-style: none;
-			color: $nav-color;
-			float: left;
-			font-size: 0.8em;
-			line-height: 3em;
-			padding: 0 1.2em;
-			
-			a {
-				color: inherit;
-				text-decoration: none;
-			}
-			
-			& ~ li {
-				border-right: 1px solid $nav-icon;
-			}
-			
-			&:last-child {
-				border: none;
-			}
-			
-			&:hover,
-			&:active,
-			&:focus {
-					cursor: pointer;
-				
-				& {
-					font-weight: bold;
-				}
-				
-				i {
-					color: white;
-				}
-			}
-			
-			&.dropdown {
-				position: relative;
-				
-				i {
-					position: absolute;
-					bottom: 0.7em;
-					right: 0.5em;
-					transform: rotate(-45deg);
-				}
-			}
-			
-			.fa {
-				vertical-align: middle;
-				color: $nav-icon;
-			}
-		}
-	}
-}
-
-//--- SECTION ---x
-.section {
-	position: relative;
-	margin: 5% 8%;
-	margin-top: 5%;
-	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-clip: border-box;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	border-bottom: .25rem solid transparent;
+	@include transition(background-color 200ms 150ms, color 200ms);
 	
-	.super-container {
-		@extend .clearfix;
-		margin: 0.15em;
-		float: left;
-		width: 36.8%;
-		color: $item-big-color;
-		background: $item-big-bg;
-		
-		.close {
-			float: right;
-			padding-right: 0.5em;
-			padding-top: 0.5em;
-			right: 0;
-			
-			i:hover {
-				font-weight: bold;
-				cursor: pointer;
-			}
-		}
-		
-		.info {
-			padding: 1.5em;
-			
-			h4 {
-				font-size: 1.5em;
-				font-weight: bold;
-			}
-			
-			p {
-				padding-top: 1em;
-			}
-		}
-		
-		.helper {
-			padding: 1.4em;
-			
-			span i {
-				font-size: 7em;
-			}
-			
-			ul {
-				float: right;
-				
-				li {
-					padding-bottom: 1em;
-					list-style: none;
-					i {
-						padding-right: 0.3em;
-						vertical-align: middle;
-						text-align: center;
-					}
-					
-					a {
-						text-decoration: none;
-						
-						&:hover {
-							// font-weight: bold;
-							cursor: pointer;
-							color: $verde;
-						}
-					}
-					
-					&:last-child {
-						padding-bottom: 0.2em;
-					}
-				}
-			}
-		}
+	&:hover{
+		background-color: $branco;
+		border-bottom: .25rem solid $verde !important;
 	}
-
-	.container {
-		@extend .clearfix;
-		width: 12%;
-		margin: 0.15em;
-		float: left;
-		background: $item-bg;
-		
-		&:hover {
-			background: $item-big-bg;
-			cursor: pointer;
-			&,
-			i {
-				color: $item-big-color;	
-			}
+	
+	a{
+		@include transition(background-color 100ms 150ms, color 200ms);
+		color: $branco;
+		text-decoration: none;
+		&:hover{
+			color:$verde
 		}
-		
-		.top {
-			text-align: center;
-			padding: 1em 0;
-		}
-		
-		.subtitle {
-			text-align: center;
-			padding-bottom: 1.5em;
-		}
-		
-		.color-green {
-			color: $verde;
-		}
-		
-		.color-gray {
-			color: $cinza;
-		}
-		
-		.color-purple {
-			color: $azul-claro;
-		}
-
-		
 	}
 }
 
+.card-body > p{
+	margin-top:10px;
+}
 
-footer {
-	clear: both;
-	min-height: 100px;
+/* helper */
+.helper-body{
+	margin-top:1rem;
+}
+.helper-icon{
+	padding-left: 50px!important;
+	padding-right: 50px!important;
+}
+.helper-links{
+
+	li{
+		&:first-child{
+			margin-top:20px;
+		}
+		list-style: none;
+		i{
+			margin-bottom:10px
+		}
+	}
+	margin:0;
+}
+/* helper */
+
+
+.topbar {
+	height: 3rem;
+}
+
+.sidebar .nav-item .nav-link .img-profile, .topbar .nav-item .nav-link .img-profile {
+	height: 2rem;
+	width: 2rem;
+}
+.topbar .nav-item .nav-link {
+	height: 3rem;
+	display: flex;
+	align-items: center;
+	padding: 0 .75rem;
+}
+.topbar.navbar-light .navbar-nav .nav-item .nav-link {
+	color: $cinza;
+}
+
+footer.sticky-footer .copyright {
+	line-height: 1;
+	font-size: .8rem;
+}
+.text-center {
+	text-align: center !important;
+}
+/* margin pattern */
+.mb-6{
+	margin-bottom: 4rem;
 }

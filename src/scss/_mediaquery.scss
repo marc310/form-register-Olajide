@@ -52,6 +52,13 @@
 }
 // mobile 414
 @media (max-width: $mobile) {
+    .helper-body{
+        margin-top:0!important;
+    }
+    .helper-links{
+        padding-left: 40px!important;
+        padding-right: 40px!important;
+    }
     .goto-top > i {
         left: -40vw;
     }
