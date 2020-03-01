@@ -304,6 +304,20 @@ input{
     color: $gray-600;
   }
 }
+.back-button{
+  float: right;
+  position: relative;
+  font-size: 40px;
+  top:20px;
+  @include transition(background-color 250ms 150ms, color 650ms);
+    a{
+
+      color: $gray-400;
+      &:hover{
+        color: $gray-600;
+      }
+    }
+}
 /* margin pattern */
 .mb-6{
 	margin-bottom: 4rem;
