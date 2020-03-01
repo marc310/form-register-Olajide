@@ -25,7 +25,7 @@
   }
   
   th { 
-    background: #333; 
+    background: $cinza; 
     color: white; 
     font-weight: bold; 
     cursor: cell;
@@ -130,11 +130,12 @@
         position: fixed;
         width: 100%;
         background-color: #fff;
-        top: 0px;
+        top: 45px;
         left:0px;
         padding: 15px;
         box-sizing: border-box;
         border-bottom: 1px solid #ccc;
+        z-index:999;
       }
         
       .box ul.pagination {
@@ -146,6 +147,7 @@
         display: block;
          margin-bottom: 10px;
       }
+      
       .pagination>li {
           display: inline-block;
       }
@@ -211,10 +213,13 @@
 
 /*style the items (options), including the selected item:*/
 .records {
-  padding: 8px 16px;
+  padding: 5px 16px;
   cursor: pointer;
   user-select: none;
+  margin-top: -5px;
+	height: 31px;
 }
+
 
 /* algumas estilizações extras */
 .label-check-inline{
@@ -298,4 +303,17 @@ input{
   &:hover{
     color: $gray-600;
   }
+}
+/* margin pattern */
+.mb-6{
+	margin-bottom: 4rem;
+}
+.mb-7{
+  margin-bottom:5rem;
+}
+.mt-6{
+	margin-top: 4rem;
+}
+.mt-7{
+  margin-top:5rem;
 }

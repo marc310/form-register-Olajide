@@ -22,6 +22,10 @@
 ************************************************************************************/
 /* SHADOW MIXINS */
 @media (max-width: 767px) {
+  .records {
+    float: right;
+    position: relative;
+    right: 10px; }
   #progressbar {
     padding: 10px; }
   #progressbar li {
@@ -33,6 +37,15 @@
     font-size: 12px !important; } }
 
 @media (max-width: 743px) {
+  .records {
+    float: right; }
+  .box .dvrecords .records {
+    margin-right: 19px !important; }
+  .box .dvrecords span {
+    top: 6px;
+    position: relative;
+    left: 15px;
+    float: left; }
   .goto-top > i {
     left: -40vw; }
   #progressbar {
@@ -56,6 +69,11 @@
     left: -15px !important; } }
 
 @media (max-width: 413px) {
+  .box .dvrecords span {
+    top: 6px;
+    position: relative;
+    left: -21px;
+    float: right; }
   .helper-body {
     margin-top: 0 !important; }
   .helper-links {
@@ -98,7 +116,7 @@ table {
   border-collapse: collapse; }
 
 th {
-  background: #333;
+  background: #646e7d;
   color: white;
   font-weight: bold;
   cursor: cell; }
@@ -186,11 +204,12 @@ tr:nth-of-type(odd) {
     position: fixed;
     width: 100%;
     background-color: #fff;
-    top: 0px;
+    top: 45px;
     left: 0px;
     padding: 15px;
     box-sizing: border-box;
-    border-bottom: 1px solid #ccc; }
+    border-bottom: 1px solid #ccc;
+    z-index: 999; }
   .box ul.pagination {
     display: block;
     margin: 0px; }
@@ -249,9 +268,11 @@ tr:nth-of-type(odd) {
 
 /*style the items (options), including the selected item:*/
 .records {
-  padding: 8px 16px;
+  padding: 5px 16px;
   cursor: pointer;
-  user-select: none; }
+  user-select: none;
+  margin-top: -5px;
+  height: 31px; }
 
 /* algumas estilizações extras */
 .label-check-inline {
@@ -327,6 +348,83 @@ input:hover {
   transition: background-color 250ms 150ms, color 650ms; }
   .goto-top > i:hover {
     color: #6c757d; }
+
+/* margin pattern */
+.mb-6 {
+  margin-bottom: 4rem; }
+
+.mb-7 {
+  margin-bottom: 5rem; }
+
+.mt-6 {
+  margin-top: 4rem; }
+
+.mt-7 {
+  margin-top: 5rem; }
+
+.bg-login-image {
+  background: url("../img/screen.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px 0px 0px 10px;
+  -moz-border-radius: 10px 0px 0px 10px;
+  -webkit-border-radius: 10px 0px 0px 10px; }
+
+form.user .form-control-user {
+  font-size: .8rem;
+  border-radius: 10rem;
+  padding: 1.5rem 1rem; }
+
+.btn-block {
+  display: block;
+  width: 100%; }
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #6e707e;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #d1d3e2;
+  border-radius: .35rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
+
+form.user .custom-checkbox.small label {
+  line-height: 1.5rem; }
+
+.small, small {
+  font-size: 80%;
+  font-weight: 400; }
+
+.custom-control-label {
+  position: relative;
+  margin-bottom: 0;
+  vertical-align: top; }
+
+form.user .custom-checkbox.small label {
+  line-height: 1.5rem; }
+
+form.user .form-control-user {
+  font-size: .8rem;
+  border-radius: 10rem;
+  padding: 1.5rem 1rem; }
+
+form.user .btn-user {
+  font-size: .8rem;
+  border-radius: 10rem;
+  padding: .75rem 1rem; }
+
+.error {
+  color: #5a5c69;
+  font-size: 7rem;
+  position: relative;
+  line-height: 1;
+  width: 12.5rem; }
 
 .home-card {
   border-bottom: 0.25rem solid #009130 !important; }
@@ -408,9 +506,29 @@ footer.sticky-footer .copyright {
 .text-center {
   text-align: center !important; }
 
-/* margin pattern */
-.mb-6 {
-  margin-bottom: 4rem; }
+.f-nav {
+  /* To fix main menu container */
+  z-index: 9999;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%; }
+
+.nav {
+  transition: position 2s, top 2s, transform 2s;
+  transition-timing-function: ease; }
+
+#main-menu-container {
+  text-align: center;
+  /* Assuming your main layout is centered */ }
+
+.menu-fixo {
+  display: inline-block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  left: 0; }
 
 .pagination {
   display: inline-block;
@@ -798,9 +916,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.9rem;
-  font-weight: 400;
-  line-height: 1.5;
   text-align: left;
   background-color: #fff; }
 

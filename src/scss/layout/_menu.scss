@@ -1,0 +1,23 @@
+.f-nav{  /* To fix main menu container */
+    z-index: 9999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    // @include transition(top 1s);
+}
+.nav{
+    transition: position 2s, top 2s, transform 2s;
+    transition-timing-function: ease;
+}
+#main-menu-container {
+    text-align: center; /* Assuming your main layout is centered */
+}
+.menu-fixo {
+    display: inline-block;
+    width: 100%; 
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    left: 0;
+}

@@ -7,6 +7,11 @@
 // }
 // // tablet 769
 @media (max-width: $tablet) {
+    .records {
+        float: right;
+        position: relative;
+        right: 10px;
+    }
     #progressbar{
         padding:10px;
     }
@@ -22,6 +27,18 @@
 }
 // mobile plus
 @media (max-width: $mobilePlus) {
+    .records{
+        float: right;
+    }
+    .box .dvrecords .records {
+        margin-right: 19px!important;
+    }
+    .box .dvrecords span{
+        top: 6px;
+        position: relative;
+        left: 15px;
+        float: left;
+    }
     .goto-top > i {
         left: -40vw;
     }
@@ -52,6 +69,12 @@
 }
 // mobile 414
 @media (max-width: $mobile) {
+    .box .dvrecords span{
+        top: 6px;
+        position: relative;
+        left: -21px;
+        float: right;
+    }
     .helper-body{
         margin-top:0!important;
     }
