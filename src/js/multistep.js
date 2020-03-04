@@ -68,38 +68,39 @@ setProgressBar(current);
     });
 
     
-$(".submit").click(function(){
-    //TODO.. implement submit
-    //
-        // aciona alterações no fieldset pra chamar a proxima tela
-        current_fs = $(this).parent();
-        next_fs = $(this).parent().next();
+    
+// $(".submit").click(function(){
+//     //TODO.. implement submit
+//     //
+//         // aciona alterações no fieldset pra chamar a proxima tela
+//         current_fs = $(this).parent();
+//         next_fs = $(this).parent().next();
 
-        //Add Class Active
-        $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+//         //Add Class Active
+//         $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
 
-        //show the next fieldset
-        next_fs.show();
-        //hide the current fieldset with style
-        current_fs.animate({opacity: 0}, {
-        step: function(now) {
-        // for making fielset appear animation
-        opacity = 1 - now;
+//         //show the next fieldset
+//         next_fs.show();
+//         //hide the current fieldset with style
+//         current_fs.animate({opacity: 0}, {
+//         step: function(now) {
+//         // for making fielset appear animation
+//         opacity = 1 - now;
 
-        current_fs.css({
-        'display': 'none',
-        'position': 'relative'
-        });
-        next_fs.css({'opacity': opacity});
-        scrollToTop(800);
-        },
-        duration: 500
-        });
-        setProgressBar(++current);
+//         current_fs.css({
+//         'display': 'none',
+//         'position': 'relative'
+//         });
+//         next_fs.css({'opacity': opacity});
+//         scrollToTop(800);
+//         },
+//         duration: 500
+//         });
+//         setProgressBar(++current);
 
-    return false;
+//     return false;
 
-});
+// });
 
 // progress bar
 function setProgressBar(curStep){
