@@ -7,6 +7,10 @@
 // }
 // // tablet 769
 @media (max-width: $tablet) {
+    #table-search{
+        top: 50px!important;
+        max-width:100%!important;
+      }
     .records {
         float: right;
         position: relative;
@@ -27,6 +31,9 @@
 }
 // mobile plus
 @media (max-width: $mobilePlus) {
+    #table-search{
+        top: 50px!important;
+      }
     .records{
         float: right;
     }
@@ -69,6 +76,9 @@
 }
 // mobile 414
 @media (max-width: $mobile) {
+    #table-search{
+        top: 50px!important;
+      }
     .box .dvrecords span{
         top: 6px;
         position: relative;
